@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Destinatioins</title>
+
+    <!--Bootstrap-->
+    <link href="https://stackpath.boothstrapdn.com/boothstrap/4.5.2/css/boothstrap.min.css"
+    rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgb(240, 196, 240);
+            margin: 0;
+            padding: 0;
+        }
+        nav{
+            background-color: coral;
+            padding: 10px;
+        }
+        nav ul{
+          list-style-type: circle;
+          margin: 0;
+          padding: 0;
+          display: grid;
+          justify-content: space-around;
+        }
+        nav ul li{
+            display: inline;
+        }
+        nav ul li a{
+          color: rgb(46, 109, 105);
+          text-decoration: dotted;
+          font-weight: bold;
+        }
+        .container{
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: greenyellow;
+            border-radius: 10px;
+            box-shadow: inset;
+        }
+        h1, h2{
+            text-align: center;
+            color: blueviolet;
+        }
+        .list-container{
+            display: flex;
+            justify-content: baseline;
+            flex-wrap: wrap;
+            margin: 20px;
+        }
+        .list-container div{
+         flex: 1;
+         margin: 10px;
+         padding: 10px;
+         border: 10px;
+         border-radius: 10px;
+         background-color:lightcoral;
+        }
+
+        ol, ul {
+         padding-left: 20px;
+        }
+        ol li, ul li{
+            margin-bottom: 10px;
+            padding-left: 20px;
+        }
+        </style>
+    </head>
+
+<body>
+    <a href="index05.html">JavaScript</a>
+    <a href="index01.html">Table</a>
+    <a href="index02.html">Form</a>
+    <a href="index03.html">Formal Navigation Bar</a>
+    <!--Navigation Bar-->
+    <nav class="navbar navbsr-expand-1g navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Travel</a>
+        <button class="navbar-toggler" type="button"
+        data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav mi-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Destinatioins</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+     </div>
+ </nav>
+ <!--First Container-->
+ <div class="container">
+    <h1>Top Flight Destinations</h1>
+    <div class="list-container">
+     <div>
+      <h2>Flight Destinatioins</h2>
+      <ol>
+        <li>New York</li>
+        <li>Paris</li>
+        <li>Tokyo</li>
+        <li>Sydney</li>
+        <li>Rio de Janeiro</li>
+      </ol>
+    </div>
+  </div>
+ </div>
+ <!--Second Container-->
+ <div class="container">
+    <h1>Top Countries to Visit</h1>
+    <div class="list-container">
+        <div>
+            <h2>Countries</h2>
+            <ul>
+                <li>United States</li>
+                <li>France</li>
+                <li>Japan</li>
+                <li>Australia</li>
+                <li>Brazil</li>
+            </ul>
+        </div>
+    </div>
+ </div>
+ <!--Bootstrap JS and Dependencies-->
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+ <script src="https://cdn.jsdelivr.net/npm/ @popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+ <script src="https://stackpath.boothstrapcdn.com/boothstrap/4.5.2/js/boothstrap.min.js"></script>
+</body>
+</html>

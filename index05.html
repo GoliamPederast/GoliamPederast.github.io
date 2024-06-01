@@ -1,0 +1,119 @@
+<!DOCTYPE html>` 
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Elegant Travel Destinations</title>
+        <style>
+            body{
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                background-color: rgb(230, 194, 230);
+                margin: 0;
+                padding: 0;
+            }
+            nav {
+                background-color: lightskyblue;
+                padding: 10px;
+            }
+            nav ul{
+                list-style-type: square;
+                margin:10px ;
+                padding:5px;
+                display: flex;
+                justify-content: space-around;
+            }
+            nav ul li{
+                display: inline;
+            }
+            nav ul li a{
+                color: lightslategray;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            .container{
+                max-width: 600px;
+                margin: 20px auto;
+                padding: 20px;
+                background-color: goldenrod;
+                border: 10px;
+            }
+            h1{
+                text-align: center;
+                color: lightgreen;
+            }
+            .card{
+                border: 5px solid;
+                border-radius: 10px;
+                padding: 20px;
+                margin-bottom: 20px;
+                background-color: mediumblue;
+            }
+            .card-header {
+                font-size: 1.5em;
+                color: rosybrown;
+                margin-bottom: 10px;
+            }
+            .card-body {
+                color: goldenrod;
+            }
+            .btn-custom{
+                background-color: darksalmon;
+                color: darkseagreen;
+                padding: 10px 20px;
+                text-decoration: double;
+                border-radius: 5px;
+                display: inline-block;
+            }
+            .btn-custom:hover{
+                background-color: hotpink;
+            }
+
+        </style>
+    </head>
+    <body>
+    <a href="index01.html">Table</a>
+    <a href="index02.html">Form</a>
+    <a href="index03.html">Formal Navigation Bar</a>
+    <a href="index04.html">Bootstrap</a>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Destinations</a></li>
+            <li><a href="#">Contact</a></li>
+         </ul>
+     </nav>
+     <div class="container">
+        <h1>Elegant Travel Destinationas</h1>
+        <div class="card">
+            <div class="card-header">New York, USA</div>
+            <div class="card-body">
+                <p>Experience the bustling city life,<br>
+                iconic landmarks like the Statue of Liberty,><br>
+                and vibriant cultural scences.</p>
+                <a href="#" class="btn-custom"
+                onclink="snowAlert()">Learn More</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="card-header">Paris, France</div>
+            <div class="card-body">
+                <p>Explore the romantic city of Paris, with <br>
+                its world-famous Eiffiel Tower,musiums,and <br>
+                cusine exquisite.</p>
+                <a href="#" class="btn-custom"
+                onclick="changeColor(this)">Learn More</a>
+            </div>
+        </div>
+     </div>
+     <script>
+        function showAlert(){
+            alert("New York is an amazing destination!");
+        }
+        function changeColor(element) {
+            element.style.backgroundColor ='#27ae60';
+            element.style.color='#ffffff';
+        }
+     </script>
+    </body>
+</html>

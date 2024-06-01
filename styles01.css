@@ -1,0 +1,24 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: rgb(205, 172, 162);
+}
+.container {
+    max-width: 800px;
+    margin: 0 ;
+    padding-top: 50px ;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.table {
+    background-color: rgb(166, 237, 229);
+}
+.table th, table td {
+    border: 5px solid #d55d5d;
+    padding: 10px;
+    text-align: left;
+}
+.table th{
+    background-color: dimgray;
+}
